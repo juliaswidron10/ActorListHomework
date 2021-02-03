@@ -24,6 +24,20 @@ function showActor(actor){
     clone.querySelector('.name').textContent = actor.fullname;
     clone.querySelector('.movie').textContent = actor.movie;
 
+    switch(actor.movie){
+        case "Pulp Fiction":
+            clone.querySelector("article").style.backgroundColor = "#c4bfdb"
+            break;
+        case "Goodfellas":
+            clone.querySelector("article").style.backgroundColor = "#a8c4d6"
+            break;
+        case "Inception":
+            clone.querySelector("article").style.backgroundColor = "#F7e5d7"
+            break;
+        default:
+            clone.querySelector("article").style.backgroundColor = "#f3DADB"
+    }
+
     clone.querySelector('article').dataset.id=actor.fullname;
     clone.querySelector('article').addEventListener("click", e=>{
         const modal = document.querySelector('.modal');
