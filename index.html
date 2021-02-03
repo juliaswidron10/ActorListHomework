@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/opw1kfr.css">
 </head>
 <body>
+<header><h1>ActorList</h1></header>
+<main class="container">
+    <template id="actor">
+        <article class="actors">
+            <img src="profile.svg" alt="sylwate of a person" loading=lazy>
+            <h1 class='name'>Name Lastname</h1>
+            <p class="movie">Movie name</p>
+        </article>
+    </template>
+   
     
+    
+    <section class="modal hide">
+        <img src="profile.svg" alt="sylwate of a person" loading=lazy>
+        <div class="info"><h1 class="modalname">Name Lastname</h1>
+            <h2>Known from:</h2>
+            <p class="moviesmodal">Name of the movie</p>
+            <button class="modalclose">close</button></div>
+    </section>
+</main>
+<footer>Julia Swidron Homework</footer>
+<script src="script.js"></script>
 </body>
 </html>
